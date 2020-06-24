@@ -216,7 +216,7 @@ Assert.assertEquals(Act_Data, Exp_data,"Item is not found in table");
 break;
 }
 }
-public void verfy()
+public void selectmethods()
 {
 	
 }

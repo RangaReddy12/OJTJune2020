@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[App Launch Success]]>
+    </line>
+    <line>
+      <![CDATA[Login Success]]>
+    </line>
+    <line>
+      <![CDATA[No of rows are::3]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="192807" started-at="2020-06-22T14:03:53Z" finished-at="2020-06-22T14:07:05Z">
+    <groups>
+    </groups>
+    <test name="Test1" duration-ms="169970" started-at="2020-06-22T14:03:53Z" finished-at="2020-06-22T14:06:43Z">
+      <class name="DriverFactory.DataDriven">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:DriverFactory.DataDriven@1e88b3c]" name="setUp" is-config="true" duration-ms="37616" started-at="2020-06-22T14:03:53Z" finished-at="2020-06-22T14:04:30Z">
+          <reporter-output>
+            <line>
+              <![CDATA[App Launch Success]]>
+            </line>
+            <line>
+              <![CDATA[Login Success]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="supplierCreation()[pri:0, instance:DriverFactory.DataDriven@1e88b3c]" name="supplierCreation" duration-ms="130658" started-at="2020-06-22T14:04:30Z" finished-at="2020-06-22T14:06:41Z">
+          <reporter-output>
+            <line>
+              <![CDATA[No of rows are::3]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- supplierCreation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:DriverFactory.DataDriven@1e88b3c]" name="tearDown" is-config="true" duration-ms="1635" started-at="2020-06-22T14:06:41Z" finished-at="2020-06-22T14:06:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- DriverFactory.DataDriven -->
+    </test> <!-- Test1 -->
+    <test name="Test2" duration-ms="22503" started-at="2020-06-22T14:06:43Z" finished-at="2020-06-22T14:07:05Z">
+      <class name="DriverFactory.AppTest">
+        <test-method status="PASS" signature="kictStart()[pri:0, instance:DriverFactory.AppTest@239963d8]" name="kictStart" duration-ms="22502" started-at="2020-06-22T14:06:43Z" finished-at="2020-06-22T14:07:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- kictStart -->
+      </class> <!-- DriverFactory.AppTest -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -8,15 +8,123 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test1</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">169,970</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Test2</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">22,503</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num">192,473</th><th colspan="2"></th></tr>
+<tr><th colspan="7">Framework</th></tr>
+<tr><td><a href="#t0">Test1</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">5,012</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Test2</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">3,852</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num attn">1</th><th class="num">0</th><th class="num">8,864</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">DriverFactory.DataDriven</td><td><a href="#m0">supplierCreation</a></td><td rowspan="1">1592834670707</td><td rowspan="1">130658</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Test2 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">DriverFactory.AppTest</td><td><a href="#m1">kictStart</a></td><td rowspan="1">1592834803379</td><td rowspan="1">22502</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Framework</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test1 &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">DriverFactory.DataDriven</td><td><a href="#m0">setUp</a></td><td rowspan="1">1602678678331</td><td rowspan="1">4964</td></tr><tr><th colspan="4">Test1 &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">DriverFactory.DataDriven</td><td><a href="#m1">tearDown</a></td><td rowspan="1">1602678683342</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test1 &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">DriverFactory.DataDriven</td><td><a href="#m2">supplierCreation</a></td><td rowspan="1">1602678683340</td><td rowspan="1">0</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Test2 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">DriverFactory.AppTest</td><td><a href="#m3">kictStart</a></td><td rowspan="1">1602678683420</td><td rowspan="1">3850</td></tr></tbody>
 </table>
-<h2>Test1</h2><h3 id="m0">DriverFactory.DataDriven#supplierCreation</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">No of rows are::3</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Test2</h2><h3 id="m1">DriverFactory.AppTest#kictStart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test1</h2><h3 id="m0">DriverFactory.DataDriven#setUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 83
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
+System info: host: &apos;LAPTOP-1I2596E2&apos;, ip: &apos;192.168.43.253&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00EF9563+2725219]
+	Ordinal0 [0x00DF8551+1672529]
+	Ordinal0 [0x00CE0359+525145]
+	Ordinal0 [0x00C70B77+68471]
+	Ordinal0 [0x00C6D32C+54060]
+	Ordinal0 [0x00C8CC37+183351]
+	Ordinal0 [0x00C8CA3D+182845]
+	Ordinal0 [0x00C8A94B+174411]
+	Ordinal0 [0x00C72528+75048]
+	Ordinal0 [0x00C735A0+79264]
+	Ordinal0 [0x00C73539+79161]
+	Ordinal0 [0x00E0D607+1758727]
+	GetHandleVerifier [0x01016546+1050150]
+	GetHandleVerifier [0x01016291+1049457]
+	GetHandleVerifier [0x010210D7+1094071]
+	GetHandleVerifier [0x01016B46+1051686]
+	Ordinal0 [0x00E05B06+1727238]
+	Ordinal0 [0x00E0EB7B+1764219]
+	Ordinal0 [0x00E0ECE3+1764579]
+	Ordinal0 [0x00E24C05+1854469]
+	BaseThreadInitThunk [0x7568F989+25]
+	RtlGetAppContainerNamedObjectPath [0x777674B4+228]
+	RtlGetAppContainerNamedObjectPath [0x77767484+180]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at CommonFunLibrary.ERPFunction.verifyUrl(ERPFunction.java:16)
+	at DriverFactory.DataDriven.setUp(DataDriven.java:19)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">DriverFactory.DataDriven#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">DriverFactory.DataDriven#supplierCreation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 83
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
+System info: host: &apos;LAPTOP-1I2596E2&apos;, ip: &apos;192.168.43.253&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00EF9563+2725219]
+	Ordinal0 [0x00DF8551+1672529]
+	Ordinal0 [0x00CE0359+525145]
+	Ordinal0 [0x00C70B77+68471]
+	Ordinal0 [0x00C6D32C+54060]
+	Ordinal0 [0x00C8CC37+183351]
+	Ordinal0 [0x00C8CA3D+182845]
+	Ordinal0 [0x00C8A94B+174411]
+	Ordinal0 [0x00C72528+75048]
+	Ordinal0 [0x00C735A0+79264]
+	Ordinal0 [0x00C73539+79161]
+	Ordinal0 [0x00E0D607+1758727]
+	GetHandleVerifier [0x01016546+1050150]
+	GetHandleVerifier [0x01016291+1049457]
+	GetHandleVerifier [0x010210D7+1094071]
+	GetHandleVerifier [0x01016B46+1051686]
+	Ordinal0 [0x00E05B06+1727238]
+	Ordinal0 [0x00E0EB7B+1764219]
+	Ordinal0 [0x00E0ECE3+1764579]
+	Ordinal0 [0x00E24C05+1854469]
+	BaseThreadInitThunk [0x7568F989+25]
+	RtlGetAppContainerNamedObjectPath [0x777674B4+228]
+	RtlGetAppContainerNamedObjectPath [0x77767484+180]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at CommonFunLibrary.ERPFunction.verifyUrl(ERPFunction.java:16)
+	at DriverFactory.DataDriven.setUp(DataDriven.java:19)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test2</h2><h3 id="m3">DriverFactory.AppTest#kictStart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

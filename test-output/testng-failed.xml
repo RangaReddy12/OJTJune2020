@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Framework]">
   <test thread-count="5" name="Test1(failed)">
     <classes>
       <class name="DriverFactory.DataDriven">
@@ -12,4 +12,4 @@
       </class> <!-- DriverFactory.DataDriven -->
     </classes>
   </test> <!-- Test1(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+</suite> <!-- Failed suite [Framework] -->
